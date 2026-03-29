@@ -38,7 +38,7 @@
 ### 🛠️ インストール
 
 1. Pythonをインストールしてください（[公式サイト](https://www.python.org/)を参照）
-2. パッケージ管理には[miniconda](https://docs.conda.io/projects/miniconda/en/latest/)をおすすめします（[ドキュメント](https://docs.conda.io/projects/miniconda/en/latest/)を参照）
+2. パッケージ管理には[miniconda](https://docs.conda.io/projects/miniconda/en/latest/)を推奨します（[ドキュメント](https://docs.conda.io/projects/miniconda/en/latest/)を参照）
 3. リポジトリをクローンして必要なパッケージをインストール
 
 ```bash
