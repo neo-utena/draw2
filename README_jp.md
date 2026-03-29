@@ -47,7 +47,7 @@ cd draw2
 python -m pip install .
 ```
 
-クローンせずに直接インストールする場合：
+クローンせずに直接インストールする場合
 
 ```bash
 python -m pip install git+https://github.com/HichTala/draw2.git
