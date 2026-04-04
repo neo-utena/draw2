@@ -1,9 +1,11 @@
 <div align="center">
     <p>
-        <img src="figures/banner-draw.png">
+        <img src="figures/banner-draw.png"  alt="DRAW 2 プロジェクトのバナーロゴ">
     </p>
 
-[![Licence](https://img.shields.io/pypi/l/ultralytics)](https://github.com/HichTala/draw2/blob/main/LICENSE)
+<div>
+
+[![Licence](https://img.shields.io/pypi/l/ultralytics)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/HichTala/draw2?logoColor=%23181717)](https://github.com/HichTala/draw2)
 [![Twitter](https://img.shields.io/badge/-twitter-000?logo=x&labelColor=555)](https://twitter.com/hichtala)
 [![HuggingFace Downloads](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2FHichTala%2Fdraw2&query=%24.downloads&logo=huggingface&label=downloads&color=%23FFD21E)](https://huggingface.co/HichTala/draw2)
@@ -11,21 +13,23 @@
 [![WandB](https://img.shields.io/badge/visualize_in-W%26B-yellow?logo=weightsandbiases&color=%23FFBE00)](https://wandb.ai/hich_/draw)
 [![Medium](https://img.shields.io/badge/-Medium-12100E?style=flat&logo=medium&labelColor=555)](https://medium.com/@hich.tala.phd/how-i-trained-again-my-model-to-detect-and-recognise-a-wide-range-of-yu-gi-oh-cards-5c567a320b0a)
 
-[🇫🇷 Français](https://github.com/HichTala/draw2/blob/main/README_fr.md)
+[🇬🇧 English](README.md) | [🇫🇷 Français](readmes/README_fr.md)
 
 </div>
 
-遊戯王のカードを画像やデュエル映像から自動で見つけて認識するAIツールです。前のバージョンから精度や安定性、使いやすさを大幅にパワーアップさせました！さらに、OBSプラグインにも対応しているので、プログラミングの知識がなくても簡単にライブ配信や動画編集に組み込むことができます。リアルタイムでカードを検出して画面に表示することも可能です。
+</div>
+
+遊戯王のカードを画像やデュエル映像から自動で見つけて認識するAIツールです。前のバージョンから精度や安定性、使いやすさを大幅にパワーアップさせました！さらに、[OBSプラグインにも対応しているので](https://github.com/HichTala/draw2-plugin)、プログラミングの知識がなくても簡単にライブ配信や動画編集に組み込むことができます。リアルタイムでカードを検出して画面に表示することも可能です。
 
 （OBS Studio用のサードパーティプラグインで、OBSプロジェクトとは関係ありません）
 
 似たようなプロジェクトもありますが（[関連プロジェクト](#-関連するプロジェクト)を参照）、デュエル中のカードをリアルタイムで認識できるのはDRAW 2だけです。
 
-このプロジェクトは[GNU AGPL v3.0](https://github.com/HichTala/draw2/blob/main/LICENCE)ライセンスで公開されています。皆さんの貢献やフィードバックをお待ちしています！
+このプロジェクトは[GNU AGPL v3.0](LICENCE)ライセンスで公開されています。皆さんの貢献やフィードバックをお待ちしています！
 
 ---
 
-## 📄 ドキュメント
+## <div align="center">📄 ドキュメント</div>
 
 **プラグインだけ使いたい方**
 → [プラグインページ](https://github.com/HichTala/draw2-plugin)を参照ください。このリポジトリからのインストールは必要ありません。
@@ -70,7 +74,7 @@ python -m draw
 
 ---
 
-## 💡 開発の経緯
+## <div align="center">💡 開発の経緯</div>
 
 このプロジェクトは、[SuperZouloux](https://www.youtube.com/watch?v=64-LfbggqKI)さんが考案した「ホログラムで遊戯王カードを再現」という面白いアイデアからヒントを得て開発しました。元の方法ではカードスリーブにチップを埋め込んでプレイマットで読み取る必要があり、手間がかかる上に伏せカードと表カードの区別ができないという問題がありました。DRAW 2はこれらの問題を解決し、デュエル中にリアルタイムでカードを認識できるようになりました。
 
@@ -78,7 +82,7 @@ python -m draw
 
 ---
 
-## 🔗 関連するプロジェクト
+## <div align="center">🔗 関連するプロジェクト</div>
 
 [遊戯王 NEURON](https://www.konami.com/games/eu/fr/products/yugioh_neuron/) はコナミ公式アプリで、カード認識を含む様々な機能を備えています。最大20枚のカードを同時に認識できますが、画質が良くないと認識しにくく、デュエル中のような環境には不向きです。また外部への組み込みもできません。
 
@@ -92,13 +96,13 @@ python -m draw
 
 ---
 
-## 🔍 技術的な詳細
+## <div align="center">🔍 技術的な詳細</div>
 
 データ収集から実際の認識までのプロセスについては、[Mediumの記事](https://medium.com/@hich.tala.phd/how-i-trained-again-my-model-to-detect-and-recognise-a-wide-range-of-yu-gi-oh-cards-5c567a320b0a)で詳しく解説しています。アルゴリズムや数学的な背景についても説明しています。質問があれば気軽にIssueを立ててください。
 
 ---
 
-## 💬 連絡先
+## <div align="center">💬 連絡先</div>
 
 - Twitter: [@hichtala](https://twitter.com/hichtala)
 - メール: [hich.tala.phd@gmail.com](mailto:hich.tala.phd@gmail.com)
