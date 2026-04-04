@@ -15,15 +15,13 @@
 
 </div>
 
-遊戯王のカードを画像やデュエル映像から自動で見つけて認識するAIツールです。前のバージョンから精度や安定性、使いやすさを大幅にパワーアップさせました！さらに、OBSプラグインにも対応しているので、プログラミングの知識がなくても簡単にライブ配信や動画編集に組み込むことができます。
-リアルタイムでカードを検出して画面に表示することも可能です。
+遊戯王のカードを画像やデュエル映像から自動で見つけて認識するAIツールです。前のバージョンから精度や安定性、使いやすさを大幅にパワーアップさせました！さらに、OBSプラグインにも対応しているので、プログラミングの知識がなくても簡単にライブ配信や動画編集に組み込むことができます。リアルタイムでカードを検出して画面に表示することも可能です。
 
 （OBS Studio用のサードパーティプラグインで、OBSプロジェクトとは関係ありません）
 
 似たようなプロジェクトもありますが（[関連プロジェクト](#-関連するプロジェクト)を参照）、デュエル中のカードをリアルタイムで認識できるのはDRAW 2だけです。
 
-このプロジェクトは[GNU AGPL v3.0](https://github.com/HichTala/draw2/blob/main/LICENCE)ライセンスで公開されています。
-皆さんのアイデアやフィードバックをお待ちしています！
+このプロジェクトは[GNU AGPL v3.0](https://github.com/HichTala/draw2/blob/main/LICENCE)ライセンスで公開されています。皆さんの貢献やフィードバックをお待ちしています！
 
 ---
 
@@ -38,42 +36,37 @@
 ### 🛠️ インストール
 
 1. Pythonをインストールしてください（[公式サイト](https://www.python.org/)を参照）
-2. パッケージ管理には[miniconda](https://docs.conda.io/projects/miniconda/en/latest/)を推奨します（[ドキュメント](https://docs.conda.io/projects/miniconda/en/latest/)を参照）
-3. リポジトリをクローンして必要なパッケージをインストール
-
+2. パッケージ管理には[miniconda](https://docs.conda.io/projects/miniconda/en/latest/)をおすすめします（[ドキュメント](https://docs.conda.io/projects/miniconda/en/latest/)を参照）
+3. リポジトリをクローンして必要なパッケージをインストール：
 ```bash
 git clone https://github.com/HichTala/draw2
 cd draw2
 python -m pip install .
 ```
 
-クローンせずに直接インストールする場合
-
+クローンせずに直接インストールする場合：
 ```bash
 python -m pip install git+https://github.com/HichTala/draw2.git
 ```
 
 ### 🚀 使い方
 
-インストール後、次のコマンドで起動できます
-
+インストール後、次のコマンドで起動できます：
 ```bash
 python -m draw
 ```
 
-主なオプション
+主なオプション：
 
-| オプション | 説明 | 初期設定 |
-|---|---|---|
-| `--source` | 入力元（画像/動画/カメラ番号） | 0（カメラ） |
-| `--save` | 出力ファイルの保存先 | 未設定 |
-| `--save-images` | 検出されたカード画像を保存 | オフ |
-| `--show` | 結果をウィンドウに表示 | オフ |
-| `--display-card` | 検出カードを画面に表示 | オフ |
-| `--deck-list` | 認識精度向上用のデッキリストファイル（.ydk） | 未設定 |
-| `--fps` | 動画保存時のFPS | 60 |
+* `--source`：入力元（画像/動画/カメラ番号）。デフォルトはウェブカメラの `0`
+* `--save`：出力ファイルの保存先
+* `--save-images`：検出されたカード画像を保存
+* `--show`：結果をウィンドウに表示
+* `--display-card`：検出カードを画面に表示
+* `--deck-list`：認識精度向上用のデッキリストファイル（.ydk）へのパス
+* `--fps`：動画保存時のFPS。デフォルトは60
 
-全てのオプションは `python -m draw --help` で確認できます。
+すべてのオプションは `python -m draw --help` で確認できます。
 
 ---
 
@@ -87,13 +80,15 @@ python -m draw
 
 ## 🔗 関連するプロジェクト
 
-| プロジェクト名 | 特長 | 制限事項 |
-|---|---|---|
-| [遊戯王 NEURON](https://www.konami.com/games/eu/fr/products/yugioh_neuron/) | コナミ公式アプリ。最大20枚同時認識 | 画質に敏感。デュエル中には不向き |
-| [yugioh one shot learning](https://github.com/vanstorm9/yugioh-one-shot-learning) | 高精度なカード分類が可能 | 低解像度に弱い。位置検出不可 |
-| [Yolov11](https://github.com/ultralytics/ultralytics) | 最新の物体検出モデル | 遊戯王専用ではない |
-| [ViT](https://arxiv.org/pdf/2010.11929.pdf) | 13,000枚以上のカードに対応 | 位置検出機能なし |
-| [SpellTable](https://spelltable.wizards.com/) | Magic: The Gathering用遠隔プレイアプリ | 遊戯王非対応 |
+[遊戯王 NEURON](https://www.konami.com/games/eu/fr/products/yugioh_neuron/) はコナミ公式アプリで、カード認識を含む様々な機能を備えています。最大20枚のカードを同時に認識できますが、画質が良くないと認識しにくく、デュエル中のような環境には不向きです。また外部への組み込みもできません。
+
+[yugioh one shot learning](https://github.com/vanstorm9/yugioh-one-shot-learning)（`vanstorm9` 製）はシャムネットワークを使った遊戯王カード分類プログラムです。画質の良い画像では優れた結果を出しますが、低画質には弱く、カードの位置特定もできません。
+
+[Yolov11](https://github.com/ultralytics/ultralytics) はリアルタイム物体検出モデル `yolo` シリーズの最新版で、傾いたバウンディングボックスにも対応しています。
+
+[ViT](https://arxiv.org/pdf/2010.11929.pdf) はVision Transformerアーキテクチャに基づく画像分類の事前学習モデルです。ImageNet-21Kなどの大規模データセットで事前学習済みのモデルが利用でき、13,000枚以上の遊戯王カードのような大量の視覚カテゴリを扱うのに適しています。
+
+[SpellTable](https://spelltable.wizards.com/) は `Jonathan Rowny` らが開発した、離れた場所でペーパー *Magic: The Gathering* を楽しむための無料アプリです。17,000枚のカードデータベースからカードを特定・認識できる点でDRAW 2と近いコンセプトですが、このプロジェクトの発端ではありません。
 
 ---
 
