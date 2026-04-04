@@ -1,11 +1,11 @@
 <div align="center">
     <p>
-        <img src="figures/banner-draw.png"  alt="DRAW 2 プロジェクトのバナーロゴ">
+        <img src="../figures/banner-draw.png"  alt="DRAW 2 プロジェクトのバナーロゴ">
     </p>
 
 <div>
 
-[![Licence](https://img.shields.io/pypi/l/ultralytics)](LICENSE)
+[![Licence](https://img.shields.io/pypi/l/ultralytics)](../LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/HichTala/draw2?logoColor=%23181717)](https://github.com/HichTala/draw2)
 [![Twitter](https://img.shields.io/badge/-twitter-000?logo=x&labelColor=555)](https://twitter.com/hichtala)
 [![HuggingFace Downloads](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2FHichTala%2Fdraw2&query=%24.downloads&logo=huggingface&label=downloads&color=%23FFD21E)](https://huggingface.co/HichTala/draw2)
@@ -13,7 +13,7 @@
 [![WandB](https://img.shields.io/badge/visualize_in-W%26B-yellow?logo=weightsandbiases&color=%23FFBE00)](https://wandb.ai/hich_/draw)
 [![Medium](https://img.shields.io/badge/-Medium-12100E?style=flat&logo=medium&labelColor=555)](https://medium.com/@hich.tala.phd/how-i-trained-again-my-model-to-detect-and-recognise-a-wide-range-of-yu-gi-oh-cards-5c567a320b0a)
 
-[🇬🇧 English](README.md) | [🇫🇷 Français](readmes/README_fr.md)
+[🇬🇧 English](../README.md) | [🇫🇷 Français](README_fr.md)
 
 </div>
 
@@ -25,7 +25,7 @@
 
 似たようなプロジェクトもありますが（[関連プロジェクト](#-関連するプロジェクト)を参照）、デュエル中のカードをリアルタイムで認識できるのはDRAW 2だけです。
 
-このプロジェクトは[GNU AGPL v3.0](LICENCE)ライセンスで公開されています。皆さんの貢献やフィードバックをお待ちしています！
+このプロジェクトは[GNU AGPL v3.0](../LICENCE)ライセンスで公開されています。皆さんの貢献やフィードバックをお待ちしています！
 
 ---
 
