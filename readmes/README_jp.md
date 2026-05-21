@@ -41,26 +41,26 @@
 
 1. Pythonをインストールしてください（[公式サイト](https://www.python.org/)を参照）
 2. パッケージ管理には[miniconda](https://docs.conda.io/projects/miniconda/en/latest/)をおすすめします（[ドキュメント](https://docs.conda.io/projects/miniconda/en/latest/)を参照）
-3. リポジトリをクローンして必要なパッケージをインストール：
+3. リポジトリをクローンして必要なパッケージをインストール
 ```bash
 git clone https://github.com/HichTala/draw2
 cd draw2
 python -m pip install .
 ```
 
-クローンせずに直接インストールする場合：
+クローンせずに直接インストールする場合
 ```bash
 python -m pip install git+https://github.com/HichTala/draw2.git
 ```
 
 ### 🚀 使い方
 
-インストール後、次のコマンドで起動できます：
+インストール後、次のコマンドで起動できます
 ```bash
 python -m draw
 ```
 
-主なオプション：
+主なオプション
 
 * `--source`：入力元（画像/動画/カメラ番号）。デフォルトはウェブカメラの `0`
 * `--save`：出力ファイルの保存先
